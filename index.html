@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - Stocky: MapReplenisher</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #09090B;
+            background-color: #FAFAFA;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #16A34A 0%, #15803D 100%);
+            color: white;
+            padding: 48px 24px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 32px 24px;
+        }
+
+        .last-updated {
+            display: inline-block;
+            background: #F0FDF4;
+            color: #16A34A;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-bottom: 32px;
+            border: 1px solid #BBF7D0;
+        }
+
+        h2 {
+            color: #16A34A;
+            font-size: 1.4rem;
+            margin-top: 36px;
+            margin-bottom: 12px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #E2E8F0;
+        }
+
+        h3 {
+            color: #15803D;
+            font-size: 1.1rem;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 14px;
+            color: #334155;
+        }
+
+        ul {
+            margin-bottom: 14px;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #334155;
+        }
+
+        .highlight-box {
+            background: #F0FDF4;
+            border-left: 4px solid #16A34A;
+            padding: 16px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            color: #15803D;
+            font-weight: 500;
+        }
+
+        .contact-box {
+            background: #F8FAFC;
+            border: 1px solid #E2E8F0;
+            border-radius: 12px;
+            padding: 24px;
+            margin-top: 32px;
+        }
+
+        .contact-box h2 {
+            border-bottom: none;
+            margin-top: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px 16px;
+            border-bottom: 1px solid #E2E8F0;
+        }
+
+        th {
+            background: #F0FDF4;
+            color: #15803D;
+            font-weight: 600;
+        }
+
+        tr:hover td {
+            background: #F8FAFC;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 32px 24px;
+            color: #94A3B8;
+            font-size: 0.85rem;
+            border-top: 1px solid #E2E8F0;
+            margin-top: 48px;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                padding: 20px 16px;
+            }
+
+            th, td {
+                padding: 8px 12px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Stocky: MapReplenisher</h1>
+        <p>Política de Privacidad</p>
+    </div>
+
+    <div class="container">
+        <span class="last-updated">Última actualización: 26 de abril de 2026</span>
+
+        <div class="highlight-box">
+            <p>Stocky respeta tu privacidad. Esta aplicación almacena todos los datos localmente en tu dispositivo y no recopila información personal en servidores externos.</p>
+        </div>
+
+        <h2>1. Información que recopilamos</h2>
+        <p>Stocky es una aplicación de uso offline. Los datos que introduces (nombres de tiendas, reponedores, rutas, fotos y ubicaciones) se almacenan <strong>exclusivamente en tu dispositivo</strong> utilizando una base de datos local (SQLite).</p>
+        <p><strong>No recopilamos, almacenamos ni transmitimos información personal a servidores externos.</strong></p>
+
+        <h2>2. Permisos de la aplicación</h2>
+        <p>Stocky solicita los siguientes permisos para su funcionamiento:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Permiso</th>
+                    <th>Propósito</th>
+                    <th>¿Datos enviados externamente?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Ubicación (GPS)</strong></td>
+                    <td>Mostrar tu ubicación en el mapa y registrar la ubicación de tiendas</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td><strong>Cámara</strong></td>
+                    <td>Capturar fotos de tiendas con overlay de información</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td><strong>Internet</strong></td>
+                    <td>Cargar mapas (OpenStreetMap), geocoding (Nominatim) y mostrar anuncios</td>
+                    <td>Solo solicitudes de mapas y anuncios</td>
+                </tr>
+                <tr>
+                    <td><strong>Almacenamiento</strong></td>
+                    <td>Guardar y exportar archivos (PDFs, archivos .stocky)</td>
+                    <td>No</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>3. Servicios de terceros</h2>
+
+        <h3>3.1 Google AdMob</h3>
+        <p>Stocky utiliza Google AdMob para mostrar anuncios publicitarios. AdMob puede recopilar ciertos datos del dispositivo para servir anuncios relevantes, incluyendo:</p>
+        <ul>
+            <li>Identificador de publicidad del dispositivo</li>
+            <li>Dirección IP</li>
+            <li>Información de actividad en la aplicación</li>
+        </ul>
+        <p>Puedes consultar la política de privacidad de Google AdMob en: <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">Política de Privacidad de AdMob</a></p>
+        <p>Para optar por no recibir anuncios personalizados, puedes desactivar el identificador de publicidad en la configuración de tu dispositivo Android.</p>
+
+        <h3>3.2 OpenStreetMap y Nominatim</h3>
+        <p>Utilizamos los servicios de OpenStreetMap para mostrar mapas interactivos y Nominatim para búsquedas de direcciones. Estas solicitudes se envían a los servidores de OpenStreetMap conforme a su <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener noreferrer">política de privacidad</a>.</p>
+
+        <h2>4. Almacenamiento de datos</h2>
+        <p>Todos tus datos (tiendas, reponedores, rutas, fotos, campos personalizados) se almacenan:</p>
+        <ul>
+            <li><strong>Localmente</strong> en la base de datos SQLite de tu dispositivo</li>
+            <li><strong>En el sistema de archivos</strong> de tu dispositivo (fotos y PDFs generados)</li>
+        </ul>
+        <p><strong>No hacemos copias de seguridad de tus datos en servidores externos.</strong> Eres responsable de utilizar la función de exportación (.stocky) para respaldar tu información.</p>
+
+        <h2>5. Compartir datos</h2>
+        <p>Tus datos solo se comparten cuando tú decides hacerlo activamente:</p>
+        <ul>
+            <li>Al usar la función <strong>Exportar</strong> para generar un archivo <code>.stocky</code></li>
+            <li>Al usar la función <strong>Compartir PDF</strong> para enviar reportes</li>
+            <li>Al usar la función <strong>Compartir fotos</strong> del sistema</li>
+        </ul>
+        <p>Ninguno de estos datos pasa por nuestros servidores.</p>
+
+        <h2>6. Datos de menores</h2>
+        <p>Stocky no está dirigida a menores de 13 años. No recopilamos conscientemente datos de menores.</p>
+
+        <h2>7. Seguridad</h2>
+        <p>Dado que todos los datos se almacenan localmente en tu dispositivo, la seguridad de tu información depende de la seguridad de tu dispositivo. Recomendamos:</p>
+        <ul>
+            <li>Mantener tu dispositivo con un bloqueo de pantalla activo</li>
+            <li>No compartir tu dispositivo con personas no autorizadas</li>
+            <li>Realizar copias de seguridad periódicas usando la función de exportación</li>
+        </ul>
+
+        <h2>8. Tus derechos</h2>
+        <p>Dado que todos los datos están en tu dispositivo, tienes control total sobre ellos:</p>
+        <ul>
+            <li><strong>Acceso:</strong> Puedes ver todos tus datos dentro de la aplicación</li>
+            <li><strong>Eliminación:</strong> Puedes eliminar datos individuales o desinstalar la aplicación para eliminar todo</li>
+            <li><strong>Exportación:</strong> Puedes exportar tus datos usando la función de exportación (.stocky)</li>
+        </ul>
+
+        <h2>9. Cambios a esta política</h2>
+        <p>Podemos actualizar esta política de privacidad ocasionalmente. Cualquier cambio será reflejado en la fecha de "Última actualización" y en el contenido de esta página.</p>
+
+        <div class="contact-box">
+            <h2>10. Contacto</h2>
+            <p>Si tienes preguntas sobre esta política de privacidad o sobre el manejo de datos en Stocky, puedes contactarme en:</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rene-marcelo-ardaya/" target="_blank" rel="noopener noreferrer">Rene Marcelo Ardaya</a></p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 Stocky: MapReplenisher. Todos los derechos reservados.</p>
+    </div>
+</body>
+</html>
